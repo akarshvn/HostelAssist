@@ -9,5 +9,4 @@ public class HostelAssistApplication {
     public static void main(String[] args) {
         SpringApplication.run(HostelAssistApplication.class, args);
     }
-
 }
