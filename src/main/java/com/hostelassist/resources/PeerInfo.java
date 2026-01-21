@@ -12,15 +12,15 @@ public class PeerInfo {
         this.port = port;
     }
 
-    public String getPeerId() {
-        return peerId;
-    }
-
-    public String getHost() {
-        return host;
-    }
-
-    public int getPort() {
-        return port;
-    }
+//    public String getPeerId() {
+//        return peerId;
+//    }
+//
+//    public String getHost() {
+//        return host;
+//    }
+//
+//    public int getPort() {
+//        return port;
+//    }
 }

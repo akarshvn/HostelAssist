@@ -18,10 +18,8 @@ public class ResourceController {
         this.peerRegistryService = peerRegistryService;
     }
 
-    /**
-     * POST /api/resources/download
-     * Trigger file download from another peer
-     */
+    // POST /api/resources/download
+    // To trigger file download from seeder i.e another peer
     @PostMapping("/download")
     public ResponseEntity<String> downloadFile(@RequestBody DownloadRequest request) {
 

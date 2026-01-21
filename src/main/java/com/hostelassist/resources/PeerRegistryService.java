@@ -11,7 +11,7 @@ public class PeerRegistryService {
     private final List<PeerInfo> peers = new ArrayList<>();
 
     public PeerRegistryService() {
-        // Static peer list (for demo / coursework)
+        // Static peer list (temporarily)
         peers.add(new PeerInfo("peer-A", "localhost", 9000));
         peers.add(new PeerInfo("peer-B", "localhost", 9001));
     }

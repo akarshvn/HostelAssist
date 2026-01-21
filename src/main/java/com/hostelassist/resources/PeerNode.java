@@ -70,9 +70,9 @@ public class PeerNode {
         }
     }
 
-    public String getNodeId() {
-        return nodeId;
-    }
+//    public String getNodeId() {
+//        return nodeId;
+//    }
 
     public String getHost() {
         return host;

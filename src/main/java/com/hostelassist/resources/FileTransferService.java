@@ -35,15 +35,15 @@ public class FileTransferService {
         }
     }
 
-    public void connectToPeer(PeerNode peerNode) {
-        // Not required for basic TCP implementation
-    }
-
-    public void disconnectFromPeer(PeerNode peerNode) {
-        // Not required for basic TCP implementation
-    }
-
-    public void sendFile(PeerNode targetNode, String filePath) {
-        // Sending is handled by PeerNode when requests arrive
-    }
+//    public void connectToPeer(PeerNode peerNode) {
+//        // Not required for basic TCP implementation
+//    }
+//
+//    public void disconnectFromPeer(PeerNode peerNode) {
+//        // Not required for basic TCP implementation
+//    }
+//
+//    public void sendFile(PeerNode targetNode, String filePath) {
+//        // Sending is handled by PeerNode when requests arrive
+//    }
 }
