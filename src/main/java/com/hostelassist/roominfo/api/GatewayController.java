@@ -1,6 +1,6 @@
 
 
-package com.hostelassist.api;
+package com.hostelassist.roominfo.api;
 
 import com.hostelassist.roominfo.roomInfo;
 import com.hostelassist.roominfo.RoominfoService;
