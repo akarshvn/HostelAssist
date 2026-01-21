@@ -39,4 +39,11 @@ public class ResourceController {
         return peerRegistryService.getAllPeers();
     }
 
+    @PostMapping("/register")
+    public ResponseEntity<String> registerPeer(@RequestBody PeerInfo peerInfo) {
+        peerRegistryService.registerPeer(peerInfo);
+        return ResponseEntity.ok("Peer registered successfully");
+    }
+
+
 }

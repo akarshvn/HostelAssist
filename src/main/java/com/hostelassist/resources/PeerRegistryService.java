@@ -10,10 +10,17 @@ public class PeerRegistryService {
 
     private final List<PeerInfo> peers = new ArrayList<>();
 
-    public PeerRegistryService() {
-        // Static peer list (temporarily)
-        peers.add(new PeerInfo("peer-A", "localhost", 9000));
-        peers.add(new PeerInfo("peer-B", "localhost", 9001));
+    public synchronized void registerPeer(PeerInfo peerInfo) {
+        // Avoid duplicates
+        boolean exists = peers.stream()
+                .anyMatch(p ->
+                        p.getPeerId().equals(peerInfo.getPeerId()) &&
+                                p.getPort() == peerInfo.getPort()
+                );
+
+        if (!exists) {
+            peers.add(peerInfo);
+        }
     }
 
     public List<PeerInfo> getAllPeers() {
