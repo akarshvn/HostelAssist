@@ -35,7 +35,6 @@ out/
 
 ### VS Code ###
 .vscode/
-<<<<<<< HEAD
 
 
 # === Gradle ===
@@ -55,5 +54,3 @@ application-*.local.properties
 application-*.local.yml
 application-prod.properties
 application-prod.yml
-=======
->>>>>>> module2-javaRMI
