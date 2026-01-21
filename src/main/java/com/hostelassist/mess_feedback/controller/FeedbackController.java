@@ -5,6 +5,7 @@ import com.hostelassist.mess_feedback.model.FeedbackType;
 import com.hostelassist.mess_feedback.service.FeedbackService;
 import org.springframework.web.bind.annotation.*;
 
+@CrossOrigin(origins = "http://localhost:3000")
 @RestController
 @RequestMapping("/api/messfeedback")
 public class FeedbackController {

@@ -10,7 +10,7 @@ import java.net.Socket;
 public class FeedbackSocketClient {
 
     public void sendFeedback(FeedbackType feedback) {
-        try (Socket socket = new Socket("localhost", 5000);
+        try (Socket socket = new Socket("localhost", 5005);
              PrintWriter writer = new PrintWriter(socket.getOutputStream(), true)) {
 
             writer.println(feedback.name());

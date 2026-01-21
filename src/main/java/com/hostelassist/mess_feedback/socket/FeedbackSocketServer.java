@@ -23,7 +23,7 @@ public class FeedbackSocketServer {
     }
 
     private void runServer() {
-        try (ServerSocket serverSocket = new ServerSocket(5000)) {
+        try (ServerSocket serverSocket = new ServerSocket(5005)) {
             System.out.println("Feedback Socket Server started on port 5000");
 
             while (true) {
