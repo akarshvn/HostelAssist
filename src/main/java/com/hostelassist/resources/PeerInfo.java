@@ -16,10 +16,10 @@ public class PeerInfo {
         return peerId;
     }
 
-//    public String getHost() {
-//        return host;
-//    }
-//
+    public String getHost() {
+        return host;
+    }
+
     public int getPort() {
         return port;
     }

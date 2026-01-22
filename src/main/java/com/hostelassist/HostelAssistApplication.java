@@ -13,11 +13,11 @@ public class HostelAssistApplication {
         SpringApplication.run(HostelAssistApplication.class, args);
     }
     @PostConstruct
-    public void startPeerNode() {
+    public void startPeerNode() {src/main/java/com/hostelassist/HostelAssistApplication.java
         PeerNode peerNode = new PeerNode(
-                "peer-1",
-                "localhost",
-                9000
+                "username",
+                "192.168.0.1",
+                9002
         );
         peerNode.start();
     }
